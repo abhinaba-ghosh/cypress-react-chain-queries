@@ -1,25 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import House from './components/House';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <House house="House 1" cat="Tom" dog="Spike"></House>
+            <House house="House 2" cat="Tom" dog="Spike"></House>
+        </div>
+    );
 }
 
 export default App;
