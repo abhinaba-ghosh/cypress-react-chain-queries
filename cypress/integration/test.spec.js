@@ -11,7 +11,7 @@ describe('It should validate cypress chained queries', () => {
     // this test is currently failing
     it('it should validate react selection with component only', () => {
         cy.react('House', { props: { house: 'House 1' } })
-            .react('Cat', { name: 'Tom' })
+            .react('Cat', { props: { name: 'Tom' } })
             .should('have.length', '1');
     });
 });
